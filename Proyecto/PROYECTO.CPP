@@ -638,13 +638,27 @@ void Kernel::Play_PCB(char ventana) /*Play*/
                         			{
                          				if(cadena[5]==' ')
                          				{
-                         					if(cadena[6] == '1' || cadena[6] == '2'||cadena[6] == '3' || cadena[6] == '4'||cadena[6] == '5' || cadena[6] == '6')
+                         					if(cadena[6] == '0'||cadena[6] == '-'||cadena[6] == '1'|| cadena[7] == '1' || cadena[6] == '2'||cadena[6] == '3' || cadena[6] == '4'||cadena[6] == '5' || cadena[6] == '6')
                               				{
-                              					if(useWindows(cadena[6])!=0){
+                              					if(cadena[6] == '0'){
+                              						ColocarCursor(1,22);
+                              						float pors = (100+0.0)/numventanas;
+	                                            	for (int i = 0; i < numventanas; ++i)
+	                                            	{
+	                                            		printf("#%d/%.2f%c%c",(i+1),pors,'%', ' ');
+	                                            	}
+                              					}
+                              					else if(cadena[7] =='1'){
+	                                            	ColocarCursor(1,22);
+	                                            	float pors = (100+0.0)/numventanas;
+	                                            	printf("idle %.2f %c",pors,'%');
+	                                            }
+                              					else if(useWindows(cadena[6])!=0){
 	                                       		 	ColocarCursor(1,22);
 	                                                float por = stats(cadena[6]);
 	                                                printf("Ventana %c -> %.2f%c", cadena[6], por,'%');
 	                                            }
+
                                             }
 											else{ ColocarCursor(25,19); printf("Se esperaba el # de ventana.");break;}
                                         }
@@ -787,7 +801,7 @@ void Kernel::Play_PCB(char ventana) /*Play*/
         void Kernel::Imprimir_Pantalla()
         {
           ColocarCursor(1,22);
-          for(int q=0;q<20;++q)
+          for(int q=0;q<20*3+1;++q)
           {
              printf(" ");
           }
