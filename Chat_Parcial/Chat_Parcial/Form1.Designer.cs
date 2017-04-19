@@ -55,6 +55,8 @@
             this.txtMensaje = new System.Windows.Forms.TextBox();
             this.rtbChat = new System.Windows.Forms.RichTextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtDireccIP = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tbVentas.SuspendLayout();
             this.tpConfi.SuspendLayout();
             this.gboxCliente.SuspendLayout();
@@ -70,12 +72,14 @@
             this.tbVentas.Margin = new System.Windows.Forms.Padding(2);
             this.tbVentas.Name = "tbVentas";
             this.tbVentas.SelectedIndex = 0;
-            this.tbVentas.Size = new System.Drawing.Size(643, 318);
+            this.tbVentas.Size = new System.Drawing.Size(643, 348);
             this.tbVentas.TabIndex = 0;
             // 
             // tpConfi
             // 
             this.tpConfi.BackColor = System.Drawing.Color.Black;
+            this.tpConfi.Controls.Add(this.label1);
+            this.tpConfi.Controls.Add(this.txtDireccIP);
             this.tpConfi.Controls.Add(this.lstConsola);
             this.tpConfi.Controls.Add(this.gboxCliente);
             this.tpConfi.Controls.Add(this.groupBox1);
@@ -83,7 +87,7 @@
             this.tpConfi.Margin = new System.Windows.Forms.Padding(2);
             this.tpConfi.Name = "tpConfi";
             this.tpConfi.Padding = new System.Windows.Forms.Padding(2);
-            this.tpConfi.Size = new System.Drawing.Size(635, 292);
+            this.tpConfi.Size = new System.Drawing.Size(635, 322);
             this.tpConfi.TabIndex = 0;
             this.tpConfi.Text = "Configuracion";
             // 
@@ -92,7 +96,7 @@
             this.lstConsola.BackColor = System.Drawing.Color.Black;
             this.lstConsola.ForeColor = System.Drawing.SystemColors.Window;
             this.lstConsola.FormattingEnabled = true;
-            this.lstConsola.Location = new System.Drawing.Point(260, 5);
+            this.lstConsola.Location = new System.Drawing.Point(260, 30);
             this.lstConsola.Margin = new System.Windows.Forms.Padding(2);
             this.lstConsola.Name = "lstConsola";
             this.lstConsola.Size = new System.Drawing.Size(364, 277);
@@ -106,7 +110,7 @@
             this.gboxCliente.Controls.Add(this.label3);
             this.gboxCliente.Controls.Add(this.txtUser);
             this.gboxCliente.Controls.Add(this.label2);
-            this.gboxCliente.Location = new System.Drawing.Point(6, 172);
+            this.gboxCliente.Location = new System.Drawing.Point(6, 197);
             this.gboxCliente.Margin = new System.Windows.Forms.Padding(2);
             this.gboxCliente.Name = "gboxCliente";
             this.gboxCliente.Padding = new System.Windows.Forms.Padding(2);
@@ -173,7 +177,7 @@
             this.groupBox1.Controls.Add(this.btnIniciar);
             this.groupBox1.Controls.Add(this.lblPuerto);
             this.groupBox1.Controls.Add(this.txtPuerto);
-            this.groupBox1.Location = new System.Drawing.Point(6, 14);
+            this.groupBox1.Location = new System.Drawing.Point(6, 39);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -267,7 +271,7 @@
             this.rpChat.Margin = new System.Windows.Forms.Padding(2);
             this.rpChat.Name = "rpChat";
             this.rpChat.Padding = new System.Windows.Forms.Padding(2);
-            this.rpChat.Size = new System.Drawing.Size(635, 292);
+            this.rpChat.Size = new System.Drawing.Size(635, 322);
             this.rpChat.TabIndex = 1;
             this.rpChat.Text = "Chat";
             // 
@@ -346,11 +350,29 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // txtDireccIP
+            // 
+            this.txtDireccIP.Location = new System.Drawing.Point(128, 5);
+            this.txtDireccIP.Name = "txtDireccIP";
+            this.txtDireccIP.Size = new System.Drawing.Size(113, 20);
+            this.txtDireccIP.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(6, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Ingrese la idrección ip";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 339);
+            this.ClientSize = new System.Drawing.Size(664, 360);
             this.Controls.Add(this.tbVentas);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
@@ -359,6 +381,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.tbVentas.ResumeLayout(false);
             this.tpConfi.ResumeLayout(false);
+            this.tpConfi.PerformLayout();
             this.gboxCliente.ResumeLayout(false);
             this.gboxCliente.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -397,6 +420,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnEjecutar;
         private System.Windows.Forms.TextBox txtComando;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtDireccIP;
     }
 }
 

@@ -199,7 +199,9 @@ namespace Chat_Parcial
                 //foreach (string direntrie in direntries)
                 //{ resp = resp + Path.GetDirectoryName(direntrie) + ','; }
                 foreach (string fileName in fileEntries)
-                { resp = resp + Path.GetFileName(fileName) + ','; }
+                {
+                    resp = resp + Path.GetFileName(fileName) + ',';
+                }
                 resp = resp.Substring(0, resp.Length - 1);
             }
             else
@@ -213,7 +215,14 @@ namespace Chat_Parcial
             try
             {
                 string puerto_cliente = txtPuerto.Text;
-                chatUser = new user(nick, "192.168.0.16", puerto_cliente);
+                if (txtDireccIP.Text != "")
+                {
+                    chatUser = new user(nick, txtDireccIP.Text, puerto_cliente);
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese una dirección ip válida.", "Notificación del Servidor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
