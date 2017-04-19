@@ -60,7 +60,7 @@ void timer::stop() {
 
 void timer::reset() {
     int wereRunning = running;
-    if(wereRunning = 0)
+	if(wereRunning = 0)
         stop();
     resetted = 1;
     beg = 0;
@@ -90,7 +90,7 @@ int timer::isOver(unsigned long seconds) {
 /*---------------------------------------- PCB -----------------------------------------------------------------*/
 class PCB
 {
-    //Se definen los tipos de uso (SeÃ±ales)
+    //Se definen los tipos de uso (Señales)
 #define NEW 1
 #define PAUSE 2
 #define EXECUTE 3
@@ -107,7 +107,7 @@ public:
     char ma[5][18];
 };
  
-//DefiniciÃ³n del constructor
+//Definición del constructor
 PCB::PCB(int id, char ventana, int qua, char _ma[5][18])
 {
     this->estadoPCB = NEW;
@@ -177,6 +177,20 @@ public:
  	void Limpiar_Comando_error();
  	void Imprimir_Pantalla();
  	void Teclado();
+ 	PCB *findPCB(char id){
+	    if(this->Head == NULL){
+	        return Head;
+	    }
+
+	    PCB *tmp = this->Head;
+	    do{
+	        if(tmp->ventana == id){
+	            return tmp;
+	        }
+	        tmp = tmp->next;
+	    }while(tmp->ventana != this->Head->idPCB);
+	    return NULL;
+	}
  	int useWindows(char ventana){
  		PCB *iterator = this->Head;
 	    while (iterator != NULL)
@@ -199,10 +213,27 @@ public:
 	{	
 		return this->current = this->current->next;;
 	}
-	float stats(int _ventanas){
-            float porcentaje = 100 + 0.0;
-            float uso = (porcentaje/_ventanas);
-            return uso;
+
+
+	float stats(char _ventanas){
+
+		PCB* actual = findPCB(_ventanas);
+
+	    PCB* tmp = this->Head;
+
+	    long int qSum = 0;
+	    do{
+	        if(tmp->estadoPCB == NEW || tmp->estadoPCB == EXECUTE){
+	            qSum += tmp->quantum;
+	        }
+			if(tmp->ventana == _ventanas){
+	            actual = tmp;
+	        }
+	        tmp = tmp->next;
+		} while(tmp != NULL);
+
+        float result = actual->quantum * 100 + 0.0 / qSum;
+            return result;
         }
 
  	void interrupt (*oldhandler)(...);
@@ -398,7 +429,7 @@ void Kernel::Play_PCB(char ventana) /*Play*/
 			}
 		}
 	}
-/*--------------------------------- ValidaciÃ³n de Teclado -------------------------------------------------------*/
+/*--------------------------------- Validación de Teclado -------------------------------------------------------*/
        void Kernel::AnalizarEntradaTeclado(char cadena[15])
         {
              switch(cadena[0])
@@ -611,7 +642,7 @@ void Kernel::Play_PCB(char ventana) /*Play*/
                               				{
                               					if(useWindows(cadena[6])!=0){
 	                                       		 	ColocarCursor(1,22);
-	                                                float por = stats(numventanas);
+	                                                float por = stats(cadena[6]);
 	                                                printf("Ventana %c -> %.2f%c", cadena[6], por,'%');
 	                                            }
                                             }
@@ -694,7 +725,7 @@ void Kernel::Play_PCB(char ventana) /*Play*/
             else {return 0;}
         }
  /*----------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------- DetecciÃ³n del Mouse ------------------------------------------------------*/          
+/*-------------------------------------- Detección del Mouse ------------------------------------------------------*/          
         int Kernel::ReiniciarMouse()
         {
           union REGS regin, regout;
@@ -736,7 +767,7 @@ void Kernel::Play_PCB(char ventana) /*Play*/
            }
            return -1;
         }
-/*----------------------------------------- MÃ¨todo que limpia el teclado -----------------------------------*/
+/*----------------------------------------- Mètodo que limpia el teclado -----------------------------------*/
 		void Kernel::Limpiar_Comando()
         {
           ColocarCursor(1,19);
