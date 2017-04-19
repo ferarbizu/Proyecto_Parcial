@@ -1,0 +1,22 @@
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\bin\Debug\Chat_Parcial.exe.config
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\bin\Debug\Chat_Parcial.exe
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\bin\Debug\Chat_Parcial.pdb
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\bin\Debug\Remote_Lbl.dll
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\bin\Debug\Remote_Lbl.pdb
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.csprojResolveAssemblyReference.cache
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.Form1.resources
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.Properties.Resources.resources
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.csproj.GenerateResource.Cache
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.exe
+C:\Users\ferar\Desktop\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.pdb
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\bin\Debug\Chat_Parcial.exe.config
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\bin\Debug\Chat_Parcial.exe
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\bin\Debug\Chat_Parcial.pdb
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\bin\Debug\Remote_Lbl.dll
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\bin\Debug\Remote_Lbl.pdb
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.csprojResolveAssemblyReference.cache
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.Form1.resources
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.Properties.Resources.resources
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.csproj.GenerateResource.Cache
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.exe
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Chat_Parcial\obj\Debug\Chat_Parcial.pdb

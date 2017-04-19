@@ -1,0 +1,10 @@
+C:\Users\ferar\Desktop\Chat_Parcial\Remote_Lbl\bin\Debug\Remote_Lbl.dll
+C:\Users\ferar\Desktop\Chat_Parcial\Remote_Lbl\bin\Debug\Remote_Lbl.pdb
+C:\Users\ferar\Desktop\Chat_Parcial\Remote_Lbl\obj\Debug\Remote_Lbl.csprojResolveAssemblyReference.cache
+C:\Users\ferar\Desktop\Chat_Parcial\Remote_Lbl\obj\Debug\Remote_Lbl.dll
+C:\Users\ferar\Desktop\Chat_Parcial\Remote_Lbl\obj\Debug\Remote_Lbl.pdb
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Remote_Lbl\bin\Debug\Remote_Lbl.dll
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Remote_Lbl\bin\Debug\Remote_Lbl.pdb
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Remote_Lbl\obj\Debug\Remote_Lbl.csprojResolveAssemblyReference.cache
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Remote_Lbl\obj\Debug\Remote_Lbl.dll
+C:\Users\Joshy\Dropbox\URL\4 to\Primer Ciclo\Sistemas Operativos\Ejercicios\Parcial 2\Chat_Parcial\Remote_Lbl\obj\Debug\Remote_Lbl.pdb
